@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>quotes</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+  </head>
+  <body>
+      <br>
+      <br>
+
+      <div class="container">
+        <form action="/process" method="post">
+          <div class="form-group">
+            <label for="author">Quote Author</label>
+            <input type="text" id="inputName" name="author" class="form-control" placeholder="Insert Author name">
+          </div>
+          <div class="form-group">
+            <label for="quote">Quote</label>
+            <textarea class="form-control" rows="5" id="quote" name="quote" placeholder="Insert the quote here.."></textarea>
+          </div>
+          <button type="submit" class="btn btn-lg btn-block btn-dark">Insert</button>
+        </form>
+
+      </div>
+  </body>
+</html>
